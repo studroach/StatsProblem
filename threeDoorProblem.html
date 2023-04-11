@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Three Doors Problem</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="settings">
+            <p>Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?</p>
+            <label for="speed">Milliseconds between simulations (0 for quickest time)</label><input id="speed" type="number" value="1">
+            <input id="runCount" type="number" placeholder="Input # of simulations">
+            <button id="start">RUN</button>
+            <h3 id="progress">Progress: </h3>
+        </div>
+    
+        <div id="output">
+            <div id="change" class="output">
+                <h3>Changing Doors</h3>
+                <p>Success percentage:</p>
+                <h2 id="changeSuccess">--</h2>
+            </div>
+
+            <div id="noChange" class="output">
+                <h3>Not Changing Doors</h3>
+                <p>Success percentage:</p>
+                <h2 id="noChangeSuccess">--</h2>
+            </div>
+        </div>
+
+	    <script src="index.js"></script>
+    </body>
+</html>
